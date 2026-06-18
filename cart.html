@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cart | FarmConnect</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.cart{
+
+max-width:1000px;
+margin:50px auto;
+padding:20px;
+
+}
+
+.cart h2{
+
+text-align:center;
+color:#2E7D32;
+margin-bottom:30px;
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+th{
+
+background:#2E7D32;
+color:white;
+padding:15px;
+
+}
+
+td{
+
+padding:15px;
+text-align:center;
+border-bottom:1px solid #ddd;
+
+}
+
+.total{
+
+margin-top:30px;
+text-align:right;
+font-size:25px;
+font-weight:bold;
+
+}
+
+.checkout{
+
+margin-top:20px;
+text-align:right;
+
+}
+
+.checkout button{
+
+padding:15px 35px;
+background:#2E7D32;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+
+}
+
+.checkout button:hover{
+
+background:#1B5E20;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2>🌱 FarmConnect</h2>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<div class="cart">
+
+<h2>Shopping Cart</h2>
+
+<table>
+
+<tr>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+
+</tr>
+
+<tr>
+
+<td>Tomatoes</td>
+
+<td>$3.500</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Potatoes</td>
+
+<td>$2.900</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Bananas</td>
+
+<td>$4.000</td>
+
+<td>3</td>
+
+</tr>
+
+</table>
+
+<div class="total">
+
+Total: $21.900
+
+</div>
+
+<div class="checkout">
+
+<button onclick="comprar()">
+
+Checkout
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function comprar(){
+
+alert("✅ Purchase completed successfully!");
+
+window.location="index.html";
+
+}
+
+</script>
+
+</body>
+
+</html>
